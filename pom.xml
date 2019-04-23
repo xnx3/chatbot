@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xnx3.chatbot</groupId>
+	<artifactId>chatbot</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<name>chatbot</name>
+	<description>weixin develop</description>
+	<url>https://github.com/xnx3/chatbot</url>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>leiming guan</name>
+			<email>mail@xnx3.com</email>
+			<organization>Sonatype</organization>
+			<organizationUrl>http://www.guanleiming.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<dependencies>
+		
+		<!-- xnx3-util  -->
+		<dependency>
+		  <groupId>com.xnx3.util</groupId>
+		  <artifactId>xnx3-util</artifactId>
+		  <version>1.0.0</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.xnx3.json</groupId>
+		  <artifactId>json</artifactId>
+		  <version>1.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.47</version>
+		</dependency>
+	
+		
+
+    </dependencies>
+
+</project>
