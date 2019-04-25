@@ -25,8 +25,8 @@ public class AliETSignUtil {
 	 private static final String ENCODING = "UTF-8";
     /**
 	 * 将java Date格式转成Solr支持的UTC时间
-	 * @param date
-	 * @return
+	 * @param date Date格式
+	 * @return UTC时间
 	 */
 	public static String getSolrDate(Date date) {
 		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
@@ -84,10 +84,10 @@ public class AliETSignUtil {
 	/**
 	 * SIGN签名生成算法-JAVA版本
 	 * @param method 请求方式 GET | POST
-	 * @param HashMap<String,String> params 请求参数集，所有参数必须已转换为字符串类型
+	 * @param params 请求参数集，所有参数必须已转换为字符串类型
 	 * @param akSecret Access Key Secret
 	 * @return 签名
-	 * @throws IOException
+	 * @throws IOException 异常
 	 */
 	public static String getSignature(String method,HashMap<String,Object> params,String akSecret) throws IOException {
 	        // 先将参数以其参数名的字典序升序进行排序
@@ -114,7 +114,7 @@ public class AliETSignUtil {
 	 * 再次处理。适用于阿里云接口
 	 * @param value 需要URLEncoder的参数
 	 * @return String
-	 * @throws UnsupportedEncodingException
+	 * @throws UnsupportedEncodingException 异常
 	 */
 	private static String percentEncode(String value) throws UnsupportedEncodingException {
 		return value != null ? URLEncoder.encode(value, ENCODING)
@@ -123,9 +123,9 @@ public class AliETSignUtil {
 	}
 	/**
 	 * 获取拼接的参数
-	 * @param params
-	 * @return
-	 * @throws IOException
+	 * @param params 参数
+	 * @return 参数
+	 * @throws IOException 异常
 	 */
 	public static String getParams(HashMap<String,Object> params) throws IOException {
 		//  先将参数以其参数名的字典序升序进行排序

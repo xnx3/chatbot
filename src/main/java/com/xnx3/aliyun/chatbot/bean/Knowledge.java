@@ -19,7 +19,7 @@ public class Knowledge {
 	
 	/**
 	 * 传入 阿里云 返回的 json对象，创建 Knowledge 对象
-	 * @param json
+	 * @param json 传入json对象
 	 */
 	public Knowledge(JSONObject json) {
 		if(json == null){
