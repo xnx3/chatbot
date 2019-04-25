@@ -30,15 +30,19 @@ java 8 所写
 
 
 ## 快速使用说明
-#### 1. 准备工作，阿里云开通云小蜜服务
-https://chatbot.console.aliyun.com
-#### 2. 为java项目导入jar包
-jar包下载：<br/>
-https://gitee.com/leimingyun/chatbot/tree/master/develop/lib
-<br/>
-将下载的jar包导入项目中
+#### 1. maven项目的 pom.xml 中加入
+````
+<dependency>
+	<groupId>com.xnx3.chatbot</groupId>
+	<artifactId>chatbot</artifactId>
+	<version>1.0</version>
+</dependency>
+```` 
 
-#### 3. 代码示例 
+#### 2. 阿里云开通云小蜜服务
+https://chatbot.console.aliyun.com
+
+#### 3. 代码中使用示例 
 ````
 import java.io.IOException;
 import com.xnx3.aliyun.chatbot.ChatbotUtil;
