@@ -9,7 +9,7 @@ java 8 所写
 ## 微信扫码体验
 ![微信扫码体验](https://images.gitee.com/uploads/images/2019/0328/140434_bff68d69_429922.png "qrcode.png")
 <br/>
-提供者：[佛山市索凡科技有限公司](http://www.suofan.net.cn/)
+体验页面提供者：[佛山市索凡科技有限公司](http://www.suofan.net.cn/)
 
 ## 功能
 1. 自定义知识库。云小蜜后台可自由录入你自己的知识库，问题及答案。
@@ -68,3 +68,6 @@ public class Test {
 	}
 }
 ````
+
+#### 4. 前端html界面
+参见 https://gitee.com/leimingyun/aichat
